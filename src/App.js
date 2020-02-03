@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native'
 
 import Sample from './components/Sample'
 import ParImpar from './components/ParImpar'
+import { Inverse, MegaSena } from './components/Multi'
 
 export default class App extends Component {
 
@@ -11,6 +12,8 @@ export default class App extends Component {
 			<View style={style.container}>
 				<Sample text='Flexible'></Sample>
 				<ParImpar number={27}></ParImpar>
+				<Inverse text='React Native!'></Inverse>
+				<MegaSena></MegaSena>
 			</View>
 		)
 	}
