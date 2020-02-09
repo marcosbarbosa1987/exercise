@@ -9,8 +9,21 @@ import Platform from './components/Platforms'
 import ValidProps from './components/ValidateProps'
 import Event from './components/Event'
 import GrandFather, { GranFather } from './components/DirectComunication'
+import SincronizedText from './components/IndirectComunication'
+import ListFlex from './components/ListFlex'
+import Flex from './components/Flex'
 
 export default createDrawerNavigator({
+    Flex: {
+        screen: () => <Flex></Flex>
+    },
+    ListFlex: {
+        screen: () => <ListFlex></ListFlex>,
+        navigationOptions: { title: 'Lista (Flex Box)'},
+    },
+    SincronizedText: {
+        screen: () => <SincronizedText></SincronizedText>
+    },
     GrandFather: {
         screen: () => <GranFather name='Julio' lastname='Silva' ></GranFather>
     },
